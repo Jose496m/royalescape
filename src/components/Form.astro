@@ -1,14 +1,15 @@
 ---
+import Button_4 from "./Button_4.astro";
 ---
 
 <form>
-  <label for="title">Title:</label>
-  <input id="title" name="title" type="text" required />
+  <label for="title"></label>
+  <input id="title" name="title" type="text" placeholder="NAVN" required />
 
-  <label for="long">Long Description:</label>
-  <textarea id="long" name="long" rows="6" required></textarea>
-
-  <button type="submit">Submit</button>
+  <label for="long"></label>
+  <input id="long" name="long" rows="6" placeholder="DIN OPLEVELSE" required />
+<!-- <Button_4/> -->
+  <button type="submit">INDSEND</button>
 </form>
 <script>
   function addTestimonial(newTestimonial) {
@@ -53,3 +54,43 @@
     addTestimonial(obj);
   });
 </script>
+
+<style>
+  form {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-self: center;
+  }
+
+  input [type="text"] {
+    padding 30px;
+    border: 0;
+    box-shadow:1px 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+  }
+
+   button {
+    display: block;
+    margin: 10px;
+    padding: 10px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    background: darkred;
+    color: white;
+    align-items: center;
+    gap: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: all 200ms ease-in-out;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: darkred;
+  }
+</style>
+
