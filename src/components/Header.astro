@@ -1,0 +1,97 @@
+---
+import Button from "../components/Button.astro";
+---
+
+<header>
+  <img src="/header.webp" alt="headerimage" />
+  <div class="text_box">
+    <img class="logo" src="/royalescapes_logo.webp" alt="logo" />
+    <h1>Escape venskabskrisen med vores escape room</h1>
+    <div class="book">
+      <Button title="BOOK" link="https://www.royalescapes.dk" />
+    </div>
+  </div>
+  <span></span>
+</header>
+
+<style>
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 12rem;
+  }
+
+  header img {
+    grid-row: 1/6;
+    grid-column: 1/6;
+  }
+
+  .logo {
+    width: 40%;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .text_box {
+    display: flex;
+    flex-direction: column;
+    grid-row: 1;
+    grid-column: 2/5;
+    background-color: #cac5c5ed;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 9px;
+    text-align: center;
+    color: black;
+  }
+  .book {
+    justify-content: center;
+    align-self: center;
+  }
+
+  @media (min-width: 800px) {
+    header {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 48rem;
+    }
+
+    header img {
+      grid-row: 1/6;
+      grid-column: 1/6;
+    }
+
+    .logo {
+      width: 50%;
+      align-self: center;
+      justify-content: center;
+    }
+
+    .text_box {
+      display: flex;
+      flex-direction: column;
+      grid-row: 1;
+      grid-column: 2/5;
+      background-color: #cac5c5ed;
+      color: white;
+      margin-top: 80px;
+      margin-bottom: 80px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      color: black;
+    }
+    .book {
+      justify-content: center;
+      align-self: center;
+    }
+  }
+</style>
