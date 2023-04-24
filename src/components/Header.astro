@@ -2,8 +2,7 @@
 import Button from "../components/Button.astro";
 ---
 
-<header>
-  <img src="/header.webp" alt="headerimage" />
+<header class="bg">
   <div class="text_box">
     <img class="logo" src="/royalescapes_logo.webp" alt="logo" />
     <h1>Escape venskabskrisen med vores escape room</h1>
@@ -19,6 +18,14 @@ import Button from "../components/Button.astro";
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 12rem;
+  }
+
+  .bg {
+    background-image: url(/header.webp);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   header img {
