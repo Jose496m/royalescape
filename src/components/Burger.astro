@@ -5,12 +5,10 @@
 <nav id="menu">
   <ul>
     <a class="menu_logo" href="/"><img src="/Royal Escapes_white.svg" alt="logo" /></a>
-    <div>
-      <li><a href="/">FORSIDE</a></li>
-      <li><a href="#">ESCAPE ROOMS</a></li>
-      <li><a href="#">BOOK NU</a></li>
-      <li><a href="#">GAVEKORT</a></li>
-    </div>
+    <li><a href="/">FORSIDE</a></li>
+    <li><a href="#">ESCAPE ROOMS</a></li>
+    <li><a href="#">BOOK NU</a></li>
+    <li><a href="#">GAVEKORT</a></li>
   </ul>
 </nav>
 
@@ -19,9 +17,6 @@
 <style>
   #menu {
     width: 100%;
-    display: flexbox;
-    justify-items: space-around;
-    float: right;
   }
   #menu li {
     display: inline-block;
@@ -29,18 +24,19 @@
   #menu a {
     color: white;
     text-decoration: none;
-    padding: 0.5em;
+    font-size: 20px;
+    padding: 1.5em;
   }
   #menu ul {
     padding: 0;
     display: block;
-    background-color: #333;
+    background-color: #352b2d;
     padding: 20px;
   }
 
   .menu_logo {
     display: inline-block;
-    width: 100px;
+    width: 140px;
     height: 0;
   }
   @media screen and (max-width: 900px) {
@@ -115,7 +111,7 @@
       text-align: center;
       padding-top: 20px;
       transition: all 0.3s ease-in-out;
-      background: brown;
+      background: #993f53;
     }
     #menu.overlay {
       visibility: visible;
@@ -125,7 +121,7 @@
     }
     #menu ul {
       padding: 0;
-      background-color: brown;
+      background-color: #993f53;
     }
     #menu li {
       list-style: none;
