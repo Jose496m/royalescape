@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Farver */
+  --button-color: #993f53;
+  --big-box-color: #cac5c5;
+  --background-color: #352b2d;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+button {
+  background-color: var(--button-color);
+  font-family: "Cinzel", serif;
+  display: block;
+  margin-top: 10px;
+  padding: 5px 25px;
+  font-size: 15px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #993f53;
+}
+
+.box {
+  background-color: var(--big-box-color);
+  display: block;
+  padding: 60px;
+}
+
+h1 {
+  font-family: "Cinzel", serif;
+}
+h2 {
+  font-family: "Cinzel", serif;
+}
+
+h3 {
+  font-family: "Cinzel", serif;
+}
+
+h4 {
+  font-family: "Cinzel", serif;
+}
+
+input {
+  font-family: "Cinzel", serif;
+}
+
+a {
+  font-family: "Cinzel", serif;
+}
+
+@media (min-width: 800px) {
+  button {
+    background-color: var(--button-color);
+    font-family: "Cinzel", serif;
+    display: block;
+    margin-top: 25px;
+    padding: 10px 50px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: all 200ms ease-in-out;
+  }
+}
