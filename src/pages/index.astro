@@ -2,18 +2,10 @@
 import Form from "../components/Form.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import Testimonials from "../components/Testimonials.astro";
+import TestimonialCard from "../components/TestimonialCard.astro";
 ---
 
 <MainLayout title="Kampange site">
-  <section>
-    <Testimonials />
-  </section>
+  <TestimonialCard />
   <Form />
 </MainLayout>
-<style>
-  section {
-    display: grid;
-    gap: 1em;
-    padding: 1em;
-  }
-</style>
