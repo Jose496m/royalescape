@@ -5,6 +5,15 @@ import Testimonials from "../components/Testimonials.astro";
 ---
 
 <MainLayout title="Kampange site">
-  <Testimonials />
+  <section>
+    <Testimonials />
+  </section>
   <Form />
 </MainLayout>
+<style>
+  section {
+    display: grid;
+    gap: 1em;
+    padding: 1em;
+  }
+</style>
