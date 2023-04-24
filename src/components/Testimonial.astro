@@ -1,4 +1,5 @@
 ---
+import Button from "./Button.astro";
 const { data } = Astro.props;
 
 function getFirstNChars(str, length) {
@@ -13,9 +14,21 @@ function getFirstNChars(str, length) {
     {getFirstNChars(data.description, 40)}...
     <a href={"testimonials/" + data.title + "-" + data.id}> læs mere nu</a>
   </p>
+  <Button title="Læs mere" />
 </article>
 
 <style>
+  h2 {
+    font-family: ;
+  }
   article {
+    border-radius: 1em;
+    overflow: hidden;
+    background-color: var(--brandbg);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
   }
 </style>
