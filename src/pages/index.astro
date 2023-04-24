@@ -1,16 +1,12 @@
 ---
 import Form from "../components/Form.astro";
-import Layout from "../layouts/Layout.astro";
-import Button from "../components/Button.astro";
-import Button_2 from "../components/Button_2.astro";
-import Button_3 from "../components/Button_3.astro";
-import Button_4 from "../components/Button_4.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import Testimonials from "../components/Testimonials.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<Layout title="Kampange site">
+<MainLayout title="Kampange site">
+  <Testimonials />
   <Form />
-  <Button title="BOOK" link="https://www.royalescapes.dk" />
-  <Button_2 title="SE ESCAPE RUM" link="https://www.royalescapes.dk" />
-  <Button_3 title="LÆS MERE" link="https://www.royalescapes.dk" />
-  <Button_4 title="INDSEND" link="https://www.royalescapes.dk" />
-</Layout>
+  <Footer />
+</MainLayout>
