@@ -4,11 +4,13 @@
 
 <nav id="menu">
   <ul>
-    <li><a class="menu_logo" href="/"><img src="/Royal Escapes_white.svg" alt="logo" /></a></li>
-    <li><a href="/">FORSIDE</a></li>
-    <li><a href="#">ESCAPE ROOMS</a></li>
-    <li><a href="#">BOOK NU</a></li>
-    <li><a href="#">GAVEKORT</a></li>
+    <a class="menu_logo" href="/"><img src="/Royal Escapes_white.svg" alt="logo" /></a>
+    <div>
+      <li><a href="/">FORSIDE</a></li>
+      <li><a href="#">ESCAPE ROOMS</a></li>
+      <li><a href="#">BOOK NU</a></li>
+      <li><a href="#">GAVEKORT</a></li>
+    </div>
   </ul>
 </nav>
 
@@ -17,6 +19,8 @@
 <style>
   #menu {
     width: 100%;
+    display: flexbox;
+    justify-items: space-around;
     float: right;
   }
   #menu li {
