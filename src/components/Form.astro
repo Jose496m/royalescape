@@ -58,13 +58,14 @@ import Button from "./Button.astro";
 
 <style>
   form {
-    display: block;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   input {
     display: block;
-    width: 250px;
+    width: 350px;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -79,7 +80,7 @@ import Button from "./Button.astro";
   textarea {
     resize: none;
     height: 100px;
-    width: 250px;
+    width: 350px;
     display: block;
     padding: 4px;
     border: 1px solid #ccc;
@@ -98,5 +99,6 @@ import Button from "./Button.astro";
     text-align: center;
     color: white;
     margin-bottom: 2rem;
+    margin-inline: 15rem;
   }
 </style>

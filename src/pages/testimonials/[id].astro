@@ -23,5 +23,27 @@ import MainLayout from "../../layouts/MainLayout.astro";
 ---
 
 <MainLayout title={singleTestimonial.title}>
-  {singleTestimonial.description}
+  <section>
+    <h2>{singleTestimonial.title}</h2>
+    <div>
+      {singleTestimonial.description}
+      <p>{"-" + " " + singleTestimonial.name}</p>
+    </div>
+  </section>
 </MainLayout>
+
+<style>
+  section {
+    margin-block: 4rem;
+    margin-inline: 10rem;
+  }
+  div {
+    background-color: #fffbfb;
+    padding: 2rem;
+  }
+  p {
+    text-align: right;
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+</style>
