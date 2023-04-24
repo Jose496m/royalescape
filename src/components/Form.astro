@@ -6,10 +6,7 @@ import Button from "./Button.astro";
   <h2>Giv din mening</h2>
   <p>Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
   <form>
-    <label for="name"></label>
     <input type="text" id="name" name="name" placeholder="DIT NAVN" />
-
-    <label for="description"></label>
     <textarea id="description" name="description" placeholder="DIN OPLEVELSE"></textarea>
   </form>
   <Button title="INDSEND" />
@@ -62,35 +59,44 @@ import Button from "./Button.astro";
 <style>
   form {
     display: block;
-    margin-top: 16px;
+    text-align: center;
   }
-  label {
+
+  input {
     display: block;
-    margin-bottom: 8px;
-  }
-  input [type="text"] {
-    display: block;
-    width: 100%;
+    width: 250px;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin-bottom: 16px;
+    margin-bottom: 3rem;
     color: #999;
   }
   section {
     display: block;
-    justify-content: center;
     padding: 5rem;
+    text-align: center;
   }
   textarea {
-    resize: vertical;
-    height: 200px;
-    width: 400px;
+    resize: none;
+    height: 100px;
+    width: 250px;
     display: block;
-    padding: 8px;
+    padding: 4px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin-bottom: 16px;
+    margin-bottom: 3rem;
     color: #999;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color: #999;
+    font-family: "Cinzel", serif;
+    font-size: 1rem;
+  }
+  h2,
+  p {
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
   }
 </style>
