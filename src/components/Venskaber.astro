@@ -1,34 +1,59 @@
-<section class="tekst">
+---
+import Button from "./Button.astro";
+---
+
+<section class="tekst grid_1-1">
   <div class="tekst3">
     <h1>Venskaber kræver også pleje...</h1>
     <h2>NOGLE GANGE ER ET GODT GYS DET DER SKAL TIL...</h2>
   </div>
   <div class="tekst2">
     <p>
-      Synes du også at det til tider er røvsygt i din vennegruppe,? så prøv
-      vores Royal escape room og escape vennkrisen. inden den dyre terapeut
-      regning.
+      Synes du også at det til tider er røvsygt i din vennegruppe? så prøv vores
+      Royal escape room og escape vennekrisen. Inden den dyre terapeut. regning.
     </p>
   </div>
-
+  <div class="Button">
+    <Button title="SE ESCAPE ROOM" />
+  </div>
   <div>
     <img class="dronning" src="/dronning1.webp" alt="dronning" />
   </div>
 </section>
 
 <style>
+  section {
+    display: block;
+    text-align: center;
+
+    padding: 1rem;
+  }
   .tekst {
     background-color: #cac5c5;
   }
   .tekst2 {
     background-color: white;
     text-align: center;
+    padding: 1rem;
+    margin: 1rem;
   }
 
-  .dronning {
-    margin: -2%;
-  }
   .tekst3 {
     text-align: center;
+  }
+  h1 {
+    font-weight: 100;
+  }
+  .dronning {
+    width: 109%;
+    height: auto;
+    margin: -6%;
+    margin-top: 10%;
+  }
+  .Button {
+    margin-top: 10%;
+  }
+
+  @media (min-width: 820px) {
   }
 </style>
