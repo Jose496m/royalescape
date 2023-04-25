@@ -1,2 +1,58 @@
+<section>
+  <a href="https://www.instagram.com/royalescapescph/"
+    ><h1>@royalescapecph</h1></a
+  >
+  <div class="grid_2-2">
+    <a href="https://www.instagram.com/p/CrB0qSeKvMv/"
+      ><img src="/insta.webp" alt="insta" /></a
+    >
 
+    <a href=""><img class="none" src="/insta3.webp" alt="insta3" /></a>
 
+    <a href="https://www.instagram.com/p/CQF51gYhhZp/"
+      ><img src="/insta2.webp" alt="insta2" /></a
+    >
+  </div>
+</section>
+
+<style>
+  .grid_2-2 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 20px;
+  }
+
+  section {
+    background-color: #cac5c5;
+    padding: 3rem;
+  }
+  .none {
+    display: none;
+  }
+  h1 {
+    text-align: center;
+  }
+
+  img {
+    width: 210px;
+    margin-left: -8%;
+    margin-top: 12%;
+  }
+
+  @media (min-width: 820px) {
+    .grid_2-2 {
+      display: grid;
+      grid-template-columns: 2fr 2fr 2fr;
+      grid-gap: 60px;
+    }
+    .none {
+      display: block;
+    }
+    img {
+      width: 100%;
+      margin-left: -1%;
+      cursor: pointer;
+      height: 264px;
+    }
+  }
+</style>
