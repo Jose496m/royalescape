@@ -5,7 +5,7 @@ import Button from "../components/Button.astro";
 <header class="bg">
   <div class="text_box">
     <img class="logo" src="/royalescapes_logo.webp" alt="logo" />
-    <h1>Escape venskabskrisen med vores escape room</h1>
+    <h1>Escape venskabskrisen med vores <br /> escape room</h1>
     <div class="book">
       <Button title="BOOK" link="https://www.royalescapes.dk" />
     </div>
@@ -51,10 +51,12 @@ import Button from "../components/Button.astro";
     font-size: 9px;
     text-align: center;
     color: black;
+    font-weight: 100;
   }
   .book {
     justify-content: center;
     align-self: center;
+    margin-top: 7%;
   }
 
   @media (min-width: 800px) {
@@ -86,8 +88,8 @@ import Button from "../components/Button.astro";
       grid-column: 2/5;
       background-color: #cac5c5;
       color: white;
-      margin-top: 80px;
-      margin-bottom: 80px;
+      margin-top: 90px;
+      margin-bottom: 165px;
       border-radius: 10px;
       box-shadow: 0 0 100px whitesmoke;
     }
@@ -96,11 +98,12 @@ import Button from "../components/Button.astro";
       font-size: 2rem;
       text-align: center;
       color: black;
+      font-weight: 100;
     }
     .book {
       justify-content: center;
       align-self: center;
-      margin-top: 50px;
+      margin-top: 40px;
     }
   }
 </style>
