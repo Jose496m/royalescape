@@ -44,7 +44,7 @@ import Button from "../components/Button.astro";
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 100px 20px whitesmoke;
+    box-shadow: 0 0 100px whitesmoke;
   }
 
   h1 {
@@ -64,9 +64,13 @@ import Button from "../components/Button.astro";
       grid-template-rows: 48rem;
     }
 
-    header img {
-      grid-row: 1/6;
-      grid-column: 1/6;
+    .bg {
+      background-image: url(/header.webp);
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: ;
     }
 
     .logo {
@@ -85,6 +89,7 @@ import Button from "../components/Button.astro";
       margin-top: 80px;
       margin-bottom: 80px;
       border-radius: 10px;
+      box-shadow: 0 0 100px whitesmoke;
     }
 
     h1 {
