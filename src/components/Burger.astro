@@ -1,25 +1,32 @@
-<div id="burger-menu">
-  <span></span>
+<div id="header">
+  <a class="menu_logo" href="/"><img src="/Royal Escapes_white.svg" alt="logo" /></a>
+  <nav id="menu">
+    <ul>
+      <li><a href="#">ESCAPE ROOMS</a></li>
+      <li><a href="#">BOOK NU</a></li>
+      <li><a href="#">GAVEKORT</a></li>
+    </ul>
+  </nav>
+  <div id="burger-menu">
+    <span></span>
+  </div>
 </div>
-
-<nav id="menu">
-  <ul>
-    <a class="menu_logo" href="/"><img src="/Royal Escapes_white.svg" alt="logo" /></a>
-    <li><a href="/">FORSIDE</a></li>
-    <li><a href="#">ESCAPE ROOMS</a></li>
-    <li><a href="#">BOOK NU</a></li>
-    <li><a href="#">GAVEKORT</a></li>
-  </ul>
-</nav>
 
 <script src="../scripts/burger.js"></script>
 
 <style>
+  #header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #352b2d;
+    padding: 20px;
+  }
   #menu {
-    width: 100%;
+    display: flex;
   }
   #menu li {
-    display: inline-block;
+    margin-left: 30px;
   }
   #menu a {
     color: white;
@@ -29,9 +36,10 @@
   }
   #menu ul {
     padding: 0;
-    display: block;
+    display: flex;
+    list-style: none;
     background-color: #352b2d;
-    padding: 20px;
+    margin: 0;
   }
 
   .menu_logo {
