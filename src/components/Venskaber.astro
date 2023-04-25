@@ -6,16 +6,15 @@ import Button from "./Button.astro";
   <div class="tekst3">
     <h1>Venskaber kræver også pleje...</h1>
     <h2>NOGLE GANGE ER ET GODT GYS DET DER SKAL TIL...</h2>
-  </div>
-  <div class="tekst2">
-    <p>
+    <p class="tekst2">
       Synes du også at det til tider er røvsygt i din vennegruppe? så prøv vores
       Royal escape room og escape vennekrisen. Inden den dyre terapeut. regning.
     </p>
+    <div class="Button">
+      <Button title="SE ESCAPE ROOM" />
+    </div>
   </div>
-  <div class="Button">
-    <Button title="SE ESCAPE ROOM" />
-  </div>
+
   <div>
     <img class="dronning" src="/dronning1.webp" alt="dronning" />
   </div>
@@ -49,11 +48,43 @@ import Button from "./Button.astro";
     height: auto;
     margin: -6%;
     margin-top: 10%;
+    background-color: #cac5c5;
   }
   .Button {
     margin-top: 10%;
   }
 
   @media (min-width: 820px) {
+    .grid_1-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .dronning {
+      width: 100%;
+      height: auto;
+      margin: -2%;
+      margin-top: -1.4%;
+      margin-right: -6%;
+    }
+    section {
+      display: grid;
+      text-align: center;
+
+      padding: 0.7rem;
+    }
+    .tekst2 {
+      padding: 4rem;
+      margin: 10rem;
+      margin-top: 2%;
+    }
+    .tekst3 {
+      text-align: center;
+    }
+    h1 {
+      margin-top: 10%;
+    }
+    .Button {
+      margin-top: -7%;
+    }
   }
 </style>
