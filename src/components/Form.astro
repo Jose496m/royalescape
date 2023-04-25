@@ -1,22 +1,23 @@
 ---
-import Button_4 from "./Button_4.astro";
+import Button from "./Button.astro";
 ---
 
-<form>
-  <label for="title"></label>
-  <input id="title" name="title" type="text" placeholder="NAVN" required />
+<section>
+  <h2>Giv din mening</h2>
+  <p>Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+  <form>
+    <input type="text" id="name" name="name" placeholder="DIT NAVN" />
+    <textarea id="description" name="description" placeholder="DIN OPLEVELSE"></textarea>
+  </form>
+  <Button title="INDSEND" />
+</section>
 
-  <label for="long"></label>
-  <input id="long" name="long" rows="6" placeholder="DIN OPLEVELSE" required />
-<!-- <Button_4/> -->
-  <button type="submit">INDSEND</button>
-</form>
 <script>
   function addTestimonial(newTestimonial) {
     //dette er funktionen der putter data i tabbellen i databasen
 
-    const url = "https://ciaqrilyjthqvwujzgne.supabase.co/rest/v1/T2_testimonials";
-    const api = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNpYXFyaWx5anRocXZ3dWp6Z25lIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzk0MDU1OTcsImV4cCI6MTk5NDk4MTU5N30.HvOlbfgbMwKnd2Dh6FMgSwgo33XsZM1nwvQXD-QrgUM";
+    const url = "https://uqqrfignuxyaogcxautj.supabase.co/rest/v1/Testimonials?limit=3";
+    const api = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVxcXJmaWdudXh5YW9nY3hhdXRqIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODE0NTU5OTksImV4cCI6MTk5NzAzMTk5OX0.FrC343CmVCw8w5fWd3KEeT9N5uSROAJDXMIzKt4qbNw";
 
     const options = {
       method: "POST", //post gør at den putter noget i tabellen istedet for at hente
@@ -58,19 +59,46 @@ import Button_4 from "./Button_4.astro";
 <style>
   form {
     display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-    align-self: center;
-
+    flex-direction: column;
+    align-items: center;
   }
 
-  input [type="text"] {
-    padding 30px;
-    border: 0;
-    box-shadow:1px 10px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 25px;
+  input {
+    display: block;
+    width: 350px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 3rem;
+    color: #999;
   }
-
-
+  section {
+    display: block;
+    padding: 5rem;
+    text-align: center;
+  }
+  textarea {
+    resize: none;
+    height: 100px;
+    width: 350px;
+    display: block;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 3rem;
+    color: #999;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color: #999;
+    font-family: "Cinzel", serif;
+    font-size: 1rem;
+  }
+  h2,
+  p {
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+    margin-inline: 15rem;
+  }
 </style>
-

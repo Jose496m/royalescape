@@ -8,10 +8,17 @@ import Testimonials from "./Testimonials.astro";
 
 <style>
   section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    margin-inline: 6rem;
-    background-color: white;
+    margin: 2rem;
+    background-color: #352b2d;
+    padding: 2rem;
+  }
+  @media (min-width: 820px) {
+    section {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      background-color: #352b2d;
+      justify-content: center;
+      gap: 30px;
+    }
   }
 </style>
