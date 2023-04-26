@@ -18,7 +18,6 @@ function getFirstNChars(str, length) {
     <Button link={"testimonials/" + data.title + "-" + data.id} title="Læs mere" />
   </div>
 </div>
-
 <style>
   h2 {
     font-size: 1.5rem;
@@ -26,14 +25,16 @@ function getFirstNChars(str, length) {
     margin: 1rem;
   }
   .card {
-    display: block;
+    display: flex;
     padding: 2rem;
     text-align: center;
     background-color: #fffbfb;
     margin-top: 2rem;
+    flex-direction: column;
+    height: 350px;
   }
   .button {
-    margin-top: 3rem;
+    margin-top: auto;
   }
   p {
     font-family: "Cinzel", serif;
