@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
-  max-width: 1600px;
 }
 
 :root {
@@ -20,7 +19,9 @@ img {
 body {
   background-color: var(--background-color);
 }
-
+main {
+  max-width: 1600px;
+}
 button {
   background-color: var(--button-color);
   font-family: "Cinzel", serif;
