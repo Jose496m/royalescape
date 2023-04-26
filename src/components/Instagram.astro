@@ -16,52 +16,53 @@
 </section>
 
 <style>
-  @media (max-width: 768px) {
-    .grid_2-2 {
-      display: grid;
-      grid-template-columns: 2fr 2fr;
-      grid-gap: 20px;
-    }
-    section {
-      background-color: #cac5c5;
-      padding: 3rem;
-    }
-    .none {
-      display: none;
-    }
-    h1 {
-      text-align: center;
-    }
-    a {
-      text-decoration: none;
-      color: black;
-    }
+  .grid_2-2 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 20px;
+  }
+  section {
+    background-color: #cac5c5;
+    padding: 3rem;
+  }
+  .none {
+    display: none;
+  }
+  h1 {
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
 
-    img {
-      width: 164pxpx;
-      margin-left: -4%;
-      margin-top: 12%;
-    }
+  img {
+    width: 164pxpx;
+    margin-left: -4%;
+    margin-top: 12%;
   }
 
   @media (min-width: 820px) {
     .grid_2-2 {
       display: grid;
       grid-template-columns: 2fr 2fr 2fr;
-      grid-gap: 60px;
+      grid-gap: 50px;
+      margin-inline: 2rem;
     }
     .none {
       display: block;
     }
-    img {
-      width: 100%;
-      margin-left: -1%;
-      cursor: pointer;
-      height: 264px;
-    }
+
     a {
       text-decoration: none;
       color: black;
+    }
+    h1 {
+      text-align: center;
+    }
+    img {
+      height: 264px;
+      margin-left: 1%;
     }
   }
 </style>
