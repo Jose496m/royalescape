@@ -1,6 +1,7 @@
 <div id="header">
   <a class="menu_logo" href="/"><img src="/Royal Escapes_white.svg" alt="logo" /></a>
   <nav id="menu">
+    <a class="menu_logo_bg" href="/"><img src="/Royal Escapes_white.svg" alt="logo" /></a>
     <ul>
       <li><a href="#">ESCAPE ROOMS</a></li>
       <li><a href="#">BOOK NU</a></li>
@@ -37,13 +38,13 @@
     text-decoration: none;
     font-size: 20px;
     padding: 1.5em;
+    white-space: nowrap;
   }
   #menu ul {
     padding: 20px;
     display: flex;
     flex-direction: row-reverse;
     list-style: none;
-    background-color: #352b2d;
     margin: 0;
     margin-right: 70px;
     height: 100%;
@@ -53,8 +54,19 @@
     display: inline-block;
     height: 100%;
   }
+
+  .menu_logo_bg {
+    display: none;
+  }
   @media screen and (max-width: 900px) {
+    #menu a {
+      padding: 0;
+    }
+    .menu_logo {
+      display: none;
+    }
     #burger-menu {
+      display: block;
       cursor: pointer;
       height: 27px;
       width: 27px;
@@ -115,7 +127,7 @@
 
     #menu {
       z-index: 1;
-      min-width: 100%;
+      width: 100%;
       min-height: 100%;
       position: fixed;
       top: 0;
@@ -125,7 +137,6 @@
       text-align: center;
       padding-top: 20px;
       transition: all 0.3s ease-in-out;
-      background: #993f53;
     }
     #menu.overlay {
       visibility: visible;
@@ -134,8 +145,10 @@
       background: rgba(0, 0, 0, 0.8);
     }
     #menu ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
       padding: 0;
-      background-color: #993f53;
     }
     #menu li {
       list-style: none;
