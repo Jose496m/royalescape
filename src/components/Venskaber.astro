@@ -8,10 +8,13 @@ import Button from "./Button.astro";
     <h2>NOGLE GANGE ER ET GODT GYS DET DER SKAL TIL...</h2>
     <p class="tekst2">
       Synes du også at det til tider er røvsygt i din vennegruppe? så prøv vores
-      Royal escape room og escape vennekrisen. Inden den dyre terapeut. regning.
+      Royal escape room og escape vennekrisen, inden den dyre terapeut regning.
     </p>
     <div class="Button">
-      <Button title="SE ESCAPE ROOM" />
+      <Button
+        title="SE ESCAPE ROOM"
+        link="https://www.royalescapes.dk/dk/escape-rooms/"
+      />
     </div>
   </div>
 
@@ -42,6 +45,12 @@ import Button from "./Button.astro";
   }
   h1 {
     font-weight: 100;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  h2 {
+    font-size: 16px;
+    margin-top: 15px;
   }
   .dronning {
     width: 109%;
@@ -52,6 +61,9 @@ import Button from "./Button.astro";
   }
   .Button {
     margin-top: 10%;
+  }
+  p {
+    font-family: "Cinzel", serif;
   }
 
   @media (min-width: 820px) {
@@ -73,18 +85,31 @@ import Button from "./Button.astro";
       padding: 0.7rem;
     }
     .tekst2 {
-      padding: 4rem;
-      margin: 10rem;
-      margin-top: 2%;
+      padding: 2rem;
+      margin: 5rem;
+      margin-top: 5%;
     }
     .tekst3 {
       text-align: center;
     }
     h1 {
       margin-top: 10%;
+      font-size: 30px;
+      margin-bottom: 30px;
     }
     .Button {
-      margin-top: -7%;
+      margin-top: -10%;
+    }
+    p {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+    p {
+      font-family: "Cinzel", serif;
     }
   }
 </style>

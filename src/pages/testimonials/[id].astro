@@ -24,8 +24,9 @@ import MainLayout from "../../layouts/MainLayout.astro";
 
 <MainLayout title={singleTestimonial.title}>
   <section>
-    <h2>{singleTestimonial.title}</h2>
     <div>
+      <h2>{singleTestimonial.title}</h2>
+
       {singleTestimonial.description}
       <p>{"-" + " " + singleTestimonial.name}</p>
     </div>
@@ -45,5 +46,14 @@ import MainLayout from "../../layouts/MainLayout.astro";
     text-align: right;
     font-weight: 600;
     margin-top: 1rem;
+  }
+  h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  @media (max-width: 700px) {
+    section {
+      margin-inline: 3rem;
+    }
   }
 </style>
