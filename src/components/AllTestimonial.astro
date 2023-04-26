@@ -7,24 +7,23 @@ function getFirstNChars(str, length) {
 }
 ---
 
-<div class="card">
-  <h2>{data.title}</h2>
+<section id="card">
+  <h3>{getFirstNChars(data.title, 30)}</h3>
 
   <p>
     {getFirstNChars(data.description, 100)}...
   </p>
   <p class="name">{"-" + " " + data.name}</p>
   <div class="button">
-    <Button link={"testimonials/" + data.title + "-" + data.id} title="Læs mere" />
+    <a href={"testimonials/" + data.title + "-" + data.id}> Læs mere</a>
   </div>
-</div>
+</section>
 <style>
-  h2 {
-    font-size: 1.5rem;
+  h3 {
     text-align: center;
-    margin: 1rem;
+    margin-bottom: 1rem;
   }
-  .card {
+  #card {
     display: flex;
     padding: 2rem;
     text-align: center;
@@ -32,16 +31,25 @@ function getFirstNChars(str, length) {
     margin-top: 2rem;
     flex-direction: column;
   }
-  .button {
-    margin-top: auto;
-  }
+
   p {
     font-family: "Cinzel", serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
   }
   .name {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     font-weight: 600;
     text-align: right;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+  }
+  .button {
+    margin-top: 3rem;
+  }
+  @media (min-width: 700px) {
+    .button {
+      grid-column: 2/3;
+      margin-top: 2rem;
+    }
   }
 </style>

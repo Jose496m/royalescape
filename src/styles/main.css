@@ -61,6 +61,7 @@ h2 {
 
 h3 {
   font-family: "Cinzel", serif;
+  font-size: 1.5rem;
 }
 
 h4 {
@@ -91,5 +92,27 @@ a {
     text-decoration: none;
     box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
     transition: all 200ms ease-in-out;
+  }
+}
+
+#card {
+  display: flex;
+  padding: 2rem;
+  text-align: center;
+  background-color: #fffbfb;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+@media (min-width: 700px) {
+  .button {
+    grid-column: 2/3;
+    margin-top: 2rem;
+  }
+  #card {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fffbfb;
+    margin-top: 2rem;
+    flex-direction: column;
   }
 }

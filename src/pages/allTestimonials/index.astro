@@ -1,17 +1,13 @@
 ---
-import Testimonials from "./Testimonials.astro";
-import Button_2 from "./Button_2.astro";
-const { link } = Astro.props;
+import AllTestimonialCard from "../../components/AllTestimonialCard.astro";
+import MainLayout from "../../layouts/MainLayout.astro";
 ---
 
-<h2>DET SIGER VORES GÆSTER</h2>
-<section>
-  <Testimonials />
-  <div class="button">
-    <Button_2 link={"allTestimonials/"} title="Se flere" />
-  </div>
-</section>
-
+<MainLayout title="All testimonials">
+  <section>
+    <AllTestimonialCard />
+  </section>
+</MainLayout>
 <style>
   section {
     margin-bottom: 2rem;
@@ -28,12 +24,7 @@ const { link } = Astro.props;
     font-weight: 600;
     font-size: 1.5rem;
   }
-  .button {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
   @media (min-width: 820px) {
     section {
       display: grid;
