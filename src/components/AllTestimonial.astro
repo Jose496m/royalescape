@@ -11,12 +11,9 @@ function getFirstNChars(str, length) {
   <h3>{getFirstNChars(data.title, 30)}</h3>
 
   <p>
-    {getFirstNChars(data.description, 100)}...
+    {data.description}
   </p>
   <p class="name">{"-" + " " + data.name}</p>
-  <div class="button">
-    <a href={"testimonials/" + data.title + "-" + data.id}> Læs mere</a>
-  </div>
 </section>
 <style>
   h3 {
@@ -33,7 +30,7 @@ function getFirstNChars(str, length) {
   }
 
   p {
-    font-family: "Cinzel", serif;
+    font-family: serif;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
   }

@@ -1,5 +1,4 @@
 ---
-import Button from "./Button.astro";
 ---
 
 <section>
@@ -10,20 +9,19 @@ import Button from "./Button.astro";
   <h2>Giv din mening</h2>
   <p>Vi er meget interesseret i at høre din mening, så vi kan forbedre din oplvelse så vidt muligt</p>
   <form>
-    <input type="text" id="name" name="name" placeholder="DIT NAVN" />
-    <input type="text" id="title" name="title" placeholder="TITLE" />
-    <textarea id="description" name="description" placeholder="DIN OPLEVELSE"></textarea>
+    <input type="text" id="name" name="name" placeholder="DIT NAVN" required />
+    <input type="text" id="title" name="title" placeholder="TITLE" required />
+    <textarea id="description" name="description" rows="6" placeholder="DIN OPLEVELSE" required></textarea>
+    <button type="submit">Indsend</button>
   </form>
-  <Button title="INDSEND" />
 </section>
 
 <script>
   function addTestimonial(newTestimonial) {
     //dette er funktionen der putter data i tabbellen i databasen
 
-    const url = "https://uqqrfignuxyaogcxautj.supabase.co/rest/v1/Testimonials?limit=3";
+    const url = "https://uqqrfignuxyaogcxautj.supabase.co/rest/v1/Testimonials";
     const api = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVxcXJmaWdudXh5YW9nY3hhdXRqIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODE0NTU5OTksImV4cCI6MTk5NzAzMTk5OX0.FrC343CmVCw8w5fWd3KEeT9N5uSROAJDXMIzKt4qbNw";
-
     const options = {
       method: "POST", //post gør at den putter noget i tabellen istedet for at hente
       headers: {
@@ -55,7 +53,7 @@ import Button from "./Button.astro";
     const obj = {
       name: form.elements.name.value,
       title: form.elements.title.value,
-      description: form.elements.long.value,
+      description: form.elements.description.value,
     };
 
     addTestimonial(obj);
@@ -121,10 +119,25 @@ import Button from "./Button.astro";
     margin-top: -7rem;
     margin-bottom: -3rem;
   }
+  button {
+    background-color: var(--button-color);
+    font-family: "Cinzel", serif;
+    padding: 15px 35px;
+    font-size: 10px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+  }
   @media (max-width: 700px) {
     textarea {
       height: 100px;
       width: 220px;
+      font-family: "Cinzel", serif;
     }
 
     input {
